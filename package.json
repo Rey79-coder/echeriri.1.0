@@ -1,0 +1,29 @@
+{
+  "name": "echeriri.1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server",
+    "seeds": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rey79-coder/echeriri.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rey79-coder/echeriri.1.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.6.5"
+  }
+}
