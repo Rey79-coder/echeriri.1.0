@@ -1,5 +1,5 @@
 
-# # Echeriri / Soap Brand
+# # echeriri.1.0 / Online Soap Store
 ## Table of Content
 
 - [Description](#Description)
@@ -12,11 +12,11 @@
 - [email](#email)
 
 ## Description:
-    This website will offer natural bar soap for everybody.An upcoming soap company Echeriri. The site displays its collection (EARTH, WATER, FIRE, and WIND). 
+    This website will sell natural bar soaps for everybody. An upcoming soap company Echeriri. The site displays its collection (EARTH, WATER, FIRE, and WIND). 
 ## Installation:
-     It was built in html, css, and javaScript. No need special installation to deploy it.
+     npm i express, requires node, handlebars, API routes.
 ## Usage:
-    You just to the website, check inventory and what you like and contact us to make a deal. 
+    People can place orders through the website.
 ## Licenses:
     Apache,MCT,ISC,GNU GPLv3
 ## Contribution:
@@ -24,14 +24,14 @@
 ## Link:
     https://rey79-coder.github.io/Echeriri/
 ## Questions:
-    Yes, how are goint to add the shopping cart along with the functionality to capture the money during the day for the placed orders.
+    Yes, how are going to add the shopping cart along with the functionality to capture the money during the day for the placed orders?
 ## email:
     reyna@echeriri.com
 
-## For additional questions about README-Generator:
+## For additional questions:
    Please reach me out through my email: reyna@echeriri.com.
    Here is a video on how to work the application.
-#[Video](https://youtu.be/Ohxj9xPT74k)
+#[Video](https://youtu.be/xJ6Zq3FgdpI)
 
 For illustration purposes here is a snapshot of real live instance:
 #[Images](https://github.com/Rey79-coder/Echeriri/blob/main/assets/img/mockup/mobile-homepage-echeriri.jpg)
