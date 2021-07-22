@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS echiriri_db;
+
+CREATE DATABASE echiriri_db;
