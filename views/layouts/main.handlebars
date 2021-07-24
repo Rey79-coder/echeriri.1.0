@@ -9,8 +9,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="dashboard.css">
         <title id="title-page" class="row">Echeriri</title>
+    {{#each css}}
+        <link rel="stylesheet" href="/css/{{style}}">
+    {{/each}}
 </head>
 
 <body>
@@ -21,14 +23,21 @@
 
                 <header id="header" class="row sticky">
 
-                    <!-- LEFT BUTTON #about -->
+                   <!-- LEFT BUTTON 1 #contact -->
+                    <div class="contact-us">
+                        <a href="#contact" class="ph">
+                            <img src="./assets/img/header/contact-us-100x100.jpg" alt="company-mission" width="100px">
+                        </a>
+                    </div>
+
+                    <!-- LEFT BUTTON 2 #about -->
                     <div class="about-icon">
                         <a href="#about" class="ph">
                             <img src="./assets/img/header/we-are-icon-100x100.jpg" alt="company-mission" width="100px">
                         </a>
                     </div>
 
-                    <!-- ECHERIR LOGO CENTER BUTTON #Echeriri-->
+                    <!-- ECHERIR LOGO CENTER BUTTON 3 #Echeriri-->
                     <div class="homepage-icon">
                         <a href="#echeriri" class="Echeriri-logo">
                             <img src="./assets/img/header/Echeriri-logo-100x100.jpg" alt="echeriri-homepage" width="100px"
@@ -36,16 +45,25 @@
                         </a>
                     </div>
 
-                    <!-- RIGHT BUTTON #contact-us -->
+                    <!-- RIGHT BUTTON 4 #contact-us -->
                     <div class="contact-us-icon">
-                        <a href="#contact-us" class="">
+                        <a href="#subscribe" class="">
                             <img src="./assets/img/header/subscribe-icon-100x100.jpg" alt="contact-info" width="100px"
                                 id="contact">
                         </a>
                     </div>
+
+                         <!-- RIGHT BUTTON 5 #contact-us -->
+                    <div class="your-cart">
+                        <a href="#yourCart" class="">
+                            <img src="./assets/img/header/your-cart-100x100.jpg" alt="your-cart" width="100px"
+                                id="cart">
+                        </a>
+                    </div>
+
                 </header>
 
-                <div class="bottom-border"></div>
+                {{!-- <div class="bottom-border"></div> --}}
 
             </div>
         </div>
@@ -64,7 +82,10 @@
 
    
     <main>
-      {{{ body }}}
+    {{{ body }}}
+    {{#each js}}
+        <script src="/js/{{this}}"></script>
+    {{/each}}
     </main>
 
 
