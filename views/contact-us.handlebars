@@ -1,50 +1,15 @@
-<ol class="post-list">
-  {{#each posts}}
-  <li>
-    <article class="post">
-      <div class="title">
-        <a href="{{post_url}}" target="_blank">{{title}}</a>
-        <span>({{post_url}})</span>
+{{!-- <div class="columns container-header">
+  <header id="header" class="row sticky">
+    <div class="about-icon">
+      <a href="#about" class="ph">
+       <img src="./assets/img/header/we-are-icon-100x100.jpg" alt="company-mission" width="100px">
+        </a>
       </div>
-      <div class="meta">
-        {{vote_count}} point(s) by {{user.username}} on
-        {{created_at}}
-        |
-        <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
-      </div>
-    </article>
-  </li>
-  {{/each}}
-</ol>
-
-
+  </header>
+</div> --}}
 
 
 {{!-- 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- GOOGLE API FONT LINK -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-
-    <!-- BULMA API FONT LINK -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-
-
-    <link rel="stylesheet" href="../public/stylesheet/style.css" />
-    <title id="title-page" class="row">Echeriri</title>
-</head>
-
-
 
 <body>
     <div id="echeriri">
