@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Homepage } = require('../models');
+const { Contact } = require('../models');
 
 router.get('/', (req, res) => {
-        res.render('homepage', { Homepage });
+        res.render('contact', {   Contact });
       })
       // .catch(err => {
       //   console.log(err);
