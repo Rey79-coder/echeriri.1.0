@@ -116,3 +116,4 @@ function myFunction() {
     });
 };
 
+app.use(express.static(__dirname + '/public'));

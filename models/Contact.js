@@ -18,4 +18,6 @@ function Contact() {
     header.classList.add("sticky");
 }}
 
+app.use(express.static(__dirname + '/public'));
+
 module.exports = Contact;
