@@ -9,38 +9,38 @@ const { router } = require('./home-routes');
 // const server = express()
 
 /* route requests for static files to appropriate directory */
-router.use('/public', express.static(__dirname + './views/contact.handlebars'))
+// router.use('/public', express.static(__dirname + './views/contact.handlebars'))
 
-/* other routes defined before catch-all */
-router.get('/contact', (req, res) => {
-  res.send('ok')
-})
+// /* other routes defined before catch-all */
+// router.get('/contact', (req, res) => {
+//   res.send('ok')
+// })
 
-/* final catch-all route to index.html defined last */
-router.get('/*', (req, res) => {
-  res.render(__dirname + './views/layouts/contact.handlebars');
-})
+// /* final catch-all route to index.html defined last */
+// router.get('/*', (req, res) => {
+//   res.render(__dirname + './views/layouts/contact.handlebars');
+// })
 
-module.exports = router;
+// module.exports = router;
 
 
 
       // THIS IS WORKING SOMEHOW
-// router.get('/', (req, res) => {
+router.get('/', (req, res) => {
 
-// namespace.Contact.Controllers; 
-// { 
-//     public.class.ContactController; Controller 
-//     { 
+namespace.Contact.Controllers; 
+{ 
+    public.class.ContactController; Controller 
+    { 
  
-//         public.url.Index() 
+        public.url.Index() 
         
-//         { 
-//             return ('./views/contact.handlebars'); 
-//         } 
-//     } 
-//   }
-// })
+        { 
+            return ('./views/contact.handlebars'); 
+        } 
+    } 
+  }
+})
 
-// app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
