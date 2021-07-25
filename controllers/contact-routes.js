@@ -18,7 +18,7 @@ router.get('/contact', (req, res) => {
 
 /* final catch-all route to index.html defined last */
 router.get('/*', (req, res) => {
-  res.sendFile(__dirname + './views/layouts/main.handlebars');
+  res.render(__dirname + './views/layouts/contact.handlebars');
 })
 
 module.exports = router;
