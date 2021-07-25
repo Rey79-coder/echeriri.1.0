@@ -8,6 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs /font-awesome/5.15.3/css/all.min.css">
     <title id="title-page" class="row">Echeriri</title>
 
@@ -31,19 +32,20 @@
 
                 <!-- LEFT BUTTON 1 #contact -->
                 <div class="contact-us">
-                    <a href="#contact" class="ph">
+                    <a href="views/contact.handlebars" class="ph">
                         <img src="./assets/img/header/contact-us-100x100.jpg" alt="company-mission" width="100px">
                     </a>
                 </div>
 
                 <!-- LEFT BUTTON 2 #about -->
-                <div class="about-icon">
+                <div class="views/team.handlebars">
                     <a href="#team" class="ph">
                         <img src="./assets/img/header/we-are-icon-100x100.jpg" alt="company-mission" width="100px">
                     </a>
                 </div>
 
                 <!-- ECHERIR LOGO CENTER BUTTON 3 #Echeriri-->
+                
                 <div class="homepage-icon">
                     <a href="#echeriri" class="Echeriri-logo">
                         <img src="./assets/img/header/Echeriri-logo-100x100.jpg" alt="echeriri-homepage" width="100px"
@@ -51,13 +53,16 @@
                     </a>
                 </div>
 
+
                 <!-- RIGHT BUTTON 4 #contact-us -->
                 <div class="contact-us-icon">
                     <a href="#subscribe" class="">
+
                         <img src="./assets/img/header/subscribe-icon-100x100.jpg" alt="contact-info" width="100px"
                             id="contact">
                     </a>
                 </div>
+
 
                 <!-- RIGHT BUTTON 5 #contact-us -->
                 <div class="your-cart">
@@ -74,12 +79,23 @@
     </div>
     </header>
 
+
+    {{!-- THIS WILL WORK TO SETUP HEADER AND FOOTER ICONS --}}
+    {{!-- <nav>
+        {{#if loggedIn}}
+        <a href="/dashboard">dashboard</a>
+        <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+        <a href="/homepage">homepage</a>
+        {{/if}}
+    </nav> --}}
+
     <main>
 
         {{{ body }}}
         {{{ contact }}}
         {{{ team }}}
-
+        {{{ user }}}
 
     </main>
 
@@ -115,6 +131,8 @@
     </div>
     </div>
     <script src="public/assets/js/script.js"></script>
+    <script src="public/javascript/login.js"></script>
+    <script src="public/javascript/logout.js"></script>
 </body>
 
 </html>
