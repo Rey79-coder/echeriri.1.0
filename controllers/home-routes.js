@@ -1,15 +1,14 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Contact } = require('../models');
+const { Contact, Team } = require('../models');
 
 router.get('/', (req, res) => {
-        res.render('contact', {   Contact });
-      })
-      // .catch(err => {
-      //   console.log(err);
-      //   res.status(500).json(err);
-      // });
-  // });
+        res.render('contact', { Contact });
+      });
+
+      router.get('/', (req, res) => {
+        res.render('team', { Team });
+      });
 
   // router.get('/login', (req, res) => {
   //   res.render('login');
