@@ -1,3 +1,4 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css";
 * {
     box-sizing: border-box;
     padding: 0;
@@ -62,7 +63,25 @@
 
 
 
+
+/* TITLE FOOTER */
+
+#collection-title {
+    display: block;
+    padding: 12px;
+    background-color: #7C5723; 
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#four {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 /* STICKY FOOTER */
+
 
 #footer {
     position: fixed;
@@ -79,10 +98,6 @@
     justify-content: center;
     padding: 12px;
     background-color: #89A13A;
-}
-
-#header {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
