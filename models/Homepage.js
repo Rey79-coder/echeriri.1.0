@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const stylesheet = require('public/css/team.css')
+const stylesheet = require('../public/assets/css/style.css')
 
 myStorage = window.localStorage;
 
@@ -18,6 +18,6 @@ function myHeader() {
     header.classList.add("sticky");
 }}
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '../views/layouts/echeriri.handlebars'));
 
 module.exports = myHeader;

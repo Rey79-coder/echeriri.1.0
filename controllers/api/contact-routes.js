@@ -1,6 +1,6 @@
 
 const router = require('express').Router();
-const { Contact } = require('../models');
+const { Contact } = require('../../models');
 const { router } = require('./home-routes');
 
 
@@ -18,7 +18,7 @@ router.get('/contact', (req, res) => {
 
 /* final catch-all route to index.html defined last */
 router.get('/*', (req, res) => {
-  res.render(__dirname + './views/layouts/contact.handlebars');
+  res.sendFile(__dirname + './views/layouts/main.handlebars');
 })
 
 module.exports = router;
@@ -36,7 +36,7 @@ module.exports = router;
 //         public.url.Index() 
         
 //         { 
-//             return ('./views/contact.handlebars'); 
+//             return ('./views/main.handlebars'); 
 //         } 
 //     } 
 //   }
@@ -44,3 +44,4 @@ module.exports = router;
 
 // app.use(express.static(__dirname + '/public'));
 
+// module.exports = router;

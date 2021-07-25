@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     
     {{!-- CSS STYLE SHEET LINK FOR EVERY HANDLEBARS --}}
-    <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/contact.css">
-            <link rel="stylesheet" href="./assets/css/team.css">
+    <link rel="stylesheet" href="../../public/assets/css/style.css">
+        <link rel="stylesheet" href="../../public/assets/css/contact.css">
+            <link rel="stylesheet" href="../../public/assets/css/team.css">
 
 </head>
 
@@ -38,7 +38,7 @@
                 </div>
 
                 <!-- LEFT BUTTON 2 #about -->
-                <div class="views/team.handlebars">
+                <div class="about">
                     <a href="#team" class="ph">
                         <img src="./assets/img/header/we-are-icon-100x100.jpg" alt="company-mission" width="100px">
                     </a>
@@ -47,8 +47,8 @@
                 <!-- ECHERIR LOGO CENTER BUTTON 3 #Echeriri-->
                 
                 <div class="homepage-icon">
-                    <a href="#echeriri" class="Echeriri-logo">
-                        <img src="./assets/img/header/Echeriri-logo-100x100.jpg" alt="echeriri-homepage" width="100px"
+                    <a href="/views/layouts/homepage.handlebars" class="Echeriri-logo">
+                        <img type="button" src="./assets/img/header/Echeriri-logo-100x100.jpg" alt="echeriri-homepage" width="100px"
                             id="echeriri">
                     </a>
                 </div>
@@ -66,7 +66,7 @@
 
                 <!-- RIGHT BUTTON 5 #contact-us -->
                 <div class="your-cart">
-                    <a href="#yourCart" class="">
+                    <a href="#yourcart" class="">
                         <img src="./assets/img/header/your-cart-100x100.jpg" alt="your-cart" width="100px" id="cart">
                     </a>
                 </div>
@@ -80,10 +80,11 @@
     </header>
 
 
+
     {{!-- THIS WILL WORK TO SETUP HEADER AND FOOTER ICONS --}}
     {{!-- <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
+        <a href="/echeriri">dashboard</a>
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
         <a href="/homepage">homepage</a>
@@ -93,9 +94,9 @@
     <main>
 
         {{{ body }}}
-        {{{ contact }}}
+        {{!-- {{{ contact }}}
         {{{ team }}}
-        {{{ user }}}
+        {{{ user }}} --}}
 
     </main>
 
@@ -131,6 +132,8 @@
     </div>
     </div>
     <script src="public/assets/js/script.js"></script>
+    <script src="public/javascript/login.js"></script>
+    <script src="public/javascript/logout.js"></script>
 </body>
 
 </html>

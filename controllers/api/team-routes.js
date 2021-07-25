@@ -1,6 +1,6 @@
 
 const router = require('express').Router();
-const { Team } = require('../models');
+const { Team } = require('../../models');
 const { router } = require('./home-routes');
 
 
