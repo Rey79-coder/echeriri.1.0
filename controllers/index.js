@@ -2,15 +2,19 @@ const router = require('express').Router();
 
 const { route } = require('./api');
 const apiRoutes = require('./api');
-const homeRoutes = require ('./home-routes')
-const contactRoutes = require ('./contact-routes')
+const homeRoutes = require ('./home-routes');
+const contactRoutes = require ('./contact-routes');
 
-const fireRoutes = require ('./fire-routes')
-const earthRoutes = require ('./earth-routes')
+const fireRoutes = require ('./fire-routes');
+const earthRoutes = require ('./earth-routes');
+const windRoutes = require ('./wind-routes');
+const waterRoutes = require ('./water-routes');
 
 
 router.use('/fire', fireRoutes);
 router.use('/earth', earthRoutes);
+router.use('/wind', windRoutes);
+router.use('/water', waterRoutes);
 
 const loginRoutes = require ('./login-routes')
 
