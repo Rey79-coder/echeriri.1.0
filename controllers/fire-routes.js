@@ -23,9 +23,4 @@ router.get('/fire', (req, res) => {
 
   
 
-=======
-    res.render('../views/layouts/fire.handlebars');
-  });
-
-
   module.exports = router;
