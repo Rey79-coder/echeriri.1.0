@@ -37,15 +37,16 @@
 
                 <!-- LEFT BUTTON 1 #contact -->
                 <div class="contact-us">
-                    <a href="views/contact.handlebars" class="ph">
-                        <img src="./assets/img/header/contact-us-100x100.jpg" alt="company-mission" width="100px">
+                    <a href="/contact" class="ph">
+                        <img type="button" src="./assets/img/header/contact-us-100x100.jpg" alt="company-mission" width="100px"
+                        id="contactBtn">
                     </a>
                 </div>
 
                 <!-- LEFT BUTTON 2 #about -->
                 <div class="about">
                     <a href="#team" class="ph">
-                        <img src="./assets/img/header/we-are-icon-100x100.jpg" alt="company-mission" width="100px">
+                        <img type="button" src="./assets/img/header/we-are-icon-100x100.jpg" alt="company-mission" width="100px">
                     </a>
                 </div>
 
@@ -99,9 +100,9 @@
     <main>
 
         {{{ body }}}
-        {{!-- {{{ contact }}}
-        {{{ team }}}
-        {{{ user }}}--}} 
+        {{{ contact }}}
+        {{!-- {{{ team }}}
+        {{{ user }}}  --}}
 
     </main>
 
@@ -138,6 +139,7 @@
     </div>
 
     <script src="../../models/Homepage.js"></script>
+    <script src="../../models/Contact.js"></script>
     <script src="../../public/assets/js/script.js"></script>
    {{#if loggedIn}}
   <script src="../../public/javascript/logout.js"></script>
