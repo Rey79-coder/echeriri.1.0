@@ -1,19 +1,19 @@
 
 const router = require('express').Router();
-const { Contact } = require('../../models');
-const { router } = require('./home-routes');
+const { Contact } = require('../models');
+// const { router } = require('./contact-routes');
 
 
 
-// const express = require('express')
+const express = require('express')
 // const server = express()
 
 /* route requests for static files to appropriate directory */
-router.use('/public', express.static(__dirname + './views/contact.handlebars'))
+router.use('/public', express.static(__dirname + 'public'))
 
 /* other routes defined before catch-all */
 router.get('/contact', (req, res) => {
-  res.send('ok')
+  res.sendFile(__dirname + '../views/contact.handlebars');
 })
 
 /* final catch-all route to index.html defined last */
