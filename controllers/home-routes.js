@@ -12,18 +12,6 @@ router.get('/', (req, res) => {
   res.render('../views/homepage.handlebars');
 });
 
-
-// router.get('/', (req, res) => {
-
-//   // console.log(req.session);
-//       res.render('views/homepage.handlebars', { Homepage });
-//      })
-//         // res.render('contact', { Contact });
-      
-// router.get('/', (req, res) => {
-//         res.render('views/main.handlebars', { Homepage });
-//       });
-
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
@@ -35,6 +23,16 @@ router.get('/login', (req, res) => {
 module.exports = router;
 
  
+// router.get('/', (req, res) => {
+
+//   // console.log(req.session);
+//       res.render('views/homepage.handlebars', { Homepage });
+//      })
+//         // res.render('contact', { Contact });
+      
+// router.get('/', (req, res) => {
+//         res.render('views/main.handlebars', { Homepage });
+//       });
 
 
 // const router = require('express').Router();
