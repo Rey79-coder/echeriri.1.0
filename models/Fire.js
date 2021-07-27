@@ -1,23 +1,26 @@
+const router = require('express').Router();
+const express = require('express');
+
 const sequelize = require('../config/connection');
 // const stylesheet = require('../public/assets/css/style.css')
 
-myStorage = window.localStorage;
+// myStorage = window.localStorage;
 
 // STICKY HEADER / When the user scrolls the page, execute myFunction
-window.onscroll = function() {myHeader()};
+// window.onscroll = function() {myHeader()};
 
+onclick = function() {myFireBtn()};
 // Get the header
-var header = document.getElementById("header");
 
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
+router.get('/', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  // res.render('../views/contact.handlebars');
+  res.render('../views/fire.handlebars');
+});
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-}}
 
-app.use(express.static(__dirname + '../views/fire.handlebars'));
 
-module.exports = myHeader;
+module.exports = router;
