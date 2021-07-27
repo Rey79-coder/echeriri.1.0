@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Fire } = require('../models');
+const { Water } = require('../models');
 
 
 router.get('/', (req, res) => {
@@ -9,10 +9,10 @@ router.get('/', (req, res) => {
     return;
   }
   // res.render('../views/contact.handlebars');
-  res.render('../views/fire.handlebars');
+  res.render('../views/water.handlebars');
 });
 
-router.get('/fire', (req, res) => {
+router.get('/water', (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
       return;

@@ -9,7 +9,7 @@ const sequelize = require('../config/connection');
 // STICKY HEADER / When the user scrolls the page, execute myFunction
 // window.onscroll = function() {myHeader()};
 
-onclick = function() {myFireBtn()};
+onclick = function() {myWindBtn()};
 // Get the header
 
 router.get('/', (req, res) => {
@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
     return;
   }
   // res.render('../views/contact.handlebars');
-  res.render('../views/fire.handlebars');
+  res.render('../views/wind.handlebars');
 });
 
 
