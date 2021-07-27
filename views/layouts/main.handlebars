@@ -101,7 +101,7 @@
         {{{ body }}}
         {{!-- {{{ contact }}}
         {{{ team }}}
-        {{{ user }}} --}}
+        {{{ user }}}--}} 
 
     </main>
 
@@ -139,8 +139,9 @@
 
     <script src="../../models/Homepage.js"></script>
     <script src="../../public/assets/js/script.js"></script>
-    <script src="public/javascript/login.js"></script>
-    <script src="public/javascript/logout.js"></script>
+   {{#if loggedIn}}
+  <script src="../../public/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
