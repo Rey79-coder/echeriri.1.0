@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const sequelize = require('../config/connection');
-const { Contact, Team, Homepage, User } = require('../models');
+const { Login } = require('../models');
+// const { router } = require('./contact-routes');
 
 
 
@@ -10,16 +10,16 @@ router.get('/', (req, res) => {
     return;
   }
   // res.render('../views/contact.handlebars');
-  res.render('../views/homepage.handlebars');
+  res.render('../views/login.handlebars');
 });
 
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/');
+    res.redirect('/login');
     return;
   }
-  res.render('../views/login.handlebars');
+  res.render('views/main.handlebars');
 });
 
-module.exports = router;
 
+module.exports = router;
