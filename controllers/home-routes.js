@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Contact, Team, Homepage } = require('../models');
+const { Contact, Team, Homepage, User } = require('../models');
 
 
 
@@ -9,7 +9,11 @@ router.get('/', (req, res) => {
     res.redirect('/');
     return;
   }
+<<<<<<< HEAD
   res.render('../views/contact.handlebars');
+=======
+  res.render('../views/homepage.handlebars');
+>>>>>>> develop
 });
 
 router.get('/contact', (req, res) => {
@@ -25,7 +29,7 @@ router.get('/login', (req, res) => {
     res.redirect('/');
     return;
   }
-  res.render('views/main.handlebars');
+  res.render('../views/login.handlebars');
 });
 
 module.exports = router;

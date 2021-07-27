@@ -62,7 +62,7 @@
 
                 <!-- RIGHT BUTTON 4 #contact-us -->
                 <div class="contact-us-icon">
-                    <a href="#subscribe" class="">
+                    <a href="../login" class="">
 
                         <img src="./assets/img/header/subscribe-icon-100x100.jpg" alt="contact-info" width="100px"
                             id="contact">
@@ -141,8 +141,9 @@
     <script src="../../models/Homepage.js"></script>
     <script src="../../models/Contact.js"></script>
     <script src="../../public/assets/js/script.js"></script>
-    <script src="public/javascript/login.js"></script>
-    <script src="public/javascript/logout.js"></script>
+   {{#if loggedIn}}
+  <script src="../../public/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
