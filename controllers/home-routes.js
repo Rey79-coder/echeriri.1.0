@@ -9,20 +9,12 @@ router.get('/', (req, res) => {
     res.redirect('/');
     return;
   }
-<<<<<<< HEAD
-  res.render('../views/contact.handlebars');
-=======
+  // res.render('../views/contact.handlebars');
   res.render('../views/homepage.handlebars');
->>>>>>> develop
 });
 
-router.get('/contact', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-  res.render('views/main.handlebars');
-});
+
+
 
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {

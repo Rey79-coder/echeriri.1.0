@@ -5,21 +5,23 @@ const { Contact } = require('../models');
 
 
 
-const express = require('express')
-// const server = express()
+router.get('/', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  // res.render('../views/contact.handlebars');
+  res.render('../views/contact.handlebars');
+});
 
-/* route requests for static files to appropriate directory */
-router.use('/public', express.static(__dirname + 'public'))
-
-/* other routes defined before catch-all */
 router.get('/contact', (req, res) => {
-  res.sendFile(__dirname + '../views/contact.handlebars');
-})
+  if (req.session.loggedIn) {
+    res.redirect('/contact');
+    return;
+  }
+  res.render('views/main.handlebars');
+});
 
-/* final catch-all route to index.html defined last */
-router.get('/*', (req, res) => {
-  res.sendFile(__dirname + './views/layouts/main.handlebars');
-})
 
 module.exports = router;
 
