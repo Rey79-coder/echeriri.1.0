@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <title>Just Tech News</title> --}}
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs /font-awesome/5.15.3/css/all.min.css">
+    <title id="title-page" class="row">Echeriri</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>{{ title }}</title>
+
+    <!-- BULMA API FONT LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    
+    {{!-- CSS STYLE SHEET LINK FOR EVERY HANDLEBARS --}}
+            {{!-- <link rel="stylesheet" href="../css/{{this}}"> --}}
+
+<link rel="stylesheet" href="../../public/assets/css/style.css">
+        <link rel="stylesheet" href="../../public/assets/css/contact.css">
+            <link rel="stylesheet" href="../../public/assets/css/team.css">
+
+</head>
+
+<body>
+    <div class="echeriri">
+
+        <!-- HEADER START -->
+        <div class="columns container-header">
+
+            <header id="header" class="row sticky">
+
+                <!-- LEFT BUTTON 1 #contact -->
+                <div class="contact-us">
+                    <a href="/contact" class="ph">
+                        <img type="button" src="./assets/img/header/contact-us-100x100.jpg" alt="company-mission" width="100px"
+                        id="contactBtn">
+                    </a>
+                </div>
+
+                <!-- LEFT BUTTON 2 #about -->
+                <div class="about">
+                    <a href="/team" class="ph">
+                        <img type="button" src="./assets/img/header/we-are-icon-100x100.jpg" alt="company-mission" width="100px"
+                        id="teamBtn">
+                    </a>
+                </div>
+
+                <!-- ECHERIR LOGO CENTER BUTTON 3 #Echeriri-->
+                
+                <div class="homepage-icon">
+                    <a href="/homepage" class="Echeriri-logo">
+                        <img type="button" src="./assets/img/header/Echeriri-logo-100x100.jpg" alt="echeriri-homepage" width="100px"
+                            id="echeriri">
+                    </a>
+                </div>
+
+
+                <!-- RIGHT BUTTON 4 #contact-us -->
+                <div class="contact-us-icon">
+                    <a href="/login" class="">
+
+                        <img type="button" src="./assets/img/header/subscribe-icon-100x100.jpg" alt="contact-info" width="100px"
+                            id="myLoginButton">
+                    </a>
+                </div>
+
+
+                <!-- RIGHT BUTTON 5 #contact-us -->
+                <div class="your-cart">
+                    <a href="#yourcart" class="">
+                        <img src="./assets/img/header/your-cart-100x100.jpg" alt="your-cart" width="100px" id="cart">
+                    </a>
+                </div>
+
+            </header>
+
+            <div class="bottom-border"></div>
+
+        </div>
+    </div>
+    </header>
+
+    <main>
+
+        {{{ body }}}
+        {{{ contact }}}
+
+        {{{ fire }}}
+        {{{ earth }}}
+        {{{ wind }}}
+        {{{ water }}}
+        {{!-- {{{ team }}}
+        {{{ user }}}  --}}
+        {{{ login }}}
+
+
+    </main>
+
+
+    <footer id="footer">
+
+        <div class="row">
+
+            <h3 id="four">FOUR COLLECTIONS</h3>
+
+            <a href="/earth" class="ph">
+                <img type= "button" src="./assets/img/footer/earth-icon.png" alt="earth-collection" height="" width="50px"
+                    id="myEarthBtn" class="collection">
+            </a>
+
+            <a href="/fire" class="ph">
+                <img type= "button" src="./assets/img/footer/fire-icon.png" alt="fire-collection" height="" width="50px"
+                    id= "myFireBtn" class="collection">
+            </a>
+
+
+            <a href="/water" class="ph">
+                <img type = "button" src="./assets/img/footer/water-icon.png" alt="water-icon" height="" width="50x"
+                    id="myWaterBtn" class="collection">
+            </a>
+
+            <a href="/wind" class="ph">
+                <img type= "button" src="./assets/img/footer/wind-icon.png" alt="water-icon" height="" width="50px"
+                    id= "myWindBtn" class="collection">
+            </a>
+        </div>
+    </footer>
+    </div>
+    </div>
+
+    <script src="../../models/Homepage.js"></script>
+    <script src="../../models/Contact.js"></script>
+    <script src="../../public/assets/js/script.js"></script>
+   {{#if loggedIn}}
+  <script src="../../public/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
