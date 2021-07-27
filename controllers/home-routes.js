@@ -23,4 +23,7 @@ router.get('/login', (req, res) => {
 
 module.exports = router;
 
+<<<<<<< HEAD
  
+=======
+>>>>>>> 4f14d19bd9e34be9116f754bdc064351ba7230de

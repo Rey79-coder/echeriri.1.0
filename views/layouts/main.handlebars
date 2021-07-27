@@ -62,10 +62,10 @@
 
                 <!-- RIGHT BUTTON 4 #contact-us -->
                 <div class="contact-us-icon">
-                    <a href="../login" class="">
+                    <a href="/login" class="">
 
-                        <img src="./assets/img/header/subscribe-icon-100x100.jpg" alt="contact-info" width="100px"
-                            id="contact">
+                        <img type="button" src="./assets/img/header/subscribe-icon-100x100.jpg" alt="contact-info" width="100px"
+                            id="myLoginButton">
                     </a>
                 </div>
 
@@ -85,24 +85,17 @@
     </div>
     </header>
 
-
-
-    {{!-- THIS WILL WORK TO SETUP HEADER AND FOOTER ICONS --}}
-    {{!-- <nav>
-        {{#if loggedIn}}
-        <a href="/echeriri">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/homepage">homepage</a>
-        {{/if}}
-    </nav> --}}
-
     <main>
 
         {{{ body }}}
         {{{ contact }}}
+
+        {{{ fire }}}
+        {{{ earth }}}
         {{!-- {{{ team }}}
         {{{ user }}}  --}}
+        {{{ login }}}
+
 
     </main>
 
@@ -113,25 +106,25 @@
 
             <h3 id="four">FOUR COLLECTIONS</h3>
 
-            <a href="#earth-collection" class="ph">
-                <img src="./assets/img/footer/earth-icon.png" alt="earth-collection" height="" width="50px"
-                    id="earth-collection" class="collection" type="button">
+            <a href="/earth" class="ph">
+                <img type= "button" src="./assets/img/footer/earth-icon.png" alt="earth-collection" height="" width="50px"
+                    id="myEarthBtn" class="collection" type="button">
             </a>
 
-            <a href="#fire-collection" class="ph">
-                <img src="./assets/img/footer/fire-icon.png" alt="fire-collection" height="" width="50px"
-                    id="fire-collection" class="collection" type="button">
+            <a href="/fire" class="ph">
+                <img type= "button" src="./assets/img/footer/fire-icon.png" alt="fire-collection" height="" width="50px"
+                    id= "myFireBtn" class="collection">
             </a>
 
 
-            <a href="#water-collection" class="ph">
+            <a href="/water" class="ph">
                 <img src="./assets/img/footer/water-icon.png" alt="water-icon" height="" width="50x"
-                    id="water-collection" class="collection" type="button">
+                    id="myWaterBtn" class="collection" type="button">
             </a>
 
-            <a href="#wind-collection" class="ph">
+            <a href="/wind" class="ph">
                 <img src="./assets/img/footer/wind-icon.png" alt="water-icon" height="" width="50px"
-                    id="wind-collection" class="collection" type="button">
+                    id="myWindBtn" class="collection" type="button">
             </a>
         </div>
     </footer>
