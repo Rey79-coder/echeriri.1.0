@@ -1,5 +1,4 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css";
-
+/* @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css"; */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,7 +16,8 @@
 }
 
 .king {
-    flex: 4;
+    /* flex: 4; */
+    display: flex;
 }
 
 /* CONTACT */

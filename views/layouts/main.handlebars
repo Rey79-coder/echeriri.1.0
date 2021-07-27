@@ -11,12 +11,17 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs /font-awesome/5.15.3/css/all.min.css">
     <title id="title-page" class="row">Echeriri</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>{{ title }}</title>
 
     <!-- BULMA API FONT LINK -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     
     {{!-- CSS STYLE SHEET LINK FOR EVERY HANDLEBARS --}}
-    <link rel="stylesheet" href="../../public/assets/css/style.css">
+            {{!-- <link rel="stylesheet" href="../css/{{this}}"> --}}
+
+<link rel="stylesheet" href="../../public/assets/css/style.css">
         <link rel="stylesheet" href="../../public/assets/css/contact.css">
             <link rel="stylesheet" href="../../public/assets/css/team.css">
 
@@ -47,7 +52,7 @@
                 <!-- ECHERIR LOGO CENTER BUTTON 3 #Echeriri-->
                 
                 <div class="homepage-icon">
-                    <a href="/views/layouts/homepage.handlebars" class="Echeriri-logo">
+                    <a href="/homepage" class="Echeriri-logo">
                         <img type="button" src="./assets/img/header/Echeriri-logo-100x100.jpg" alt="echeriri-homepage" width="100px"
                             id="echeriri">
                     </a>
@@ -131,7 +136,9 @@
     </footer>
     </div>
     </div>
-    <script src="public/assets/js/script.js"></script>
+
+    <script src="../../models/Homepage.js"></script>
+    <script src="../../public/assets/js/script.js"></script>
     <script src="public/javascript/login.js"></script>
     <script src="public/javascript/logout.js"></script>
 </body>
