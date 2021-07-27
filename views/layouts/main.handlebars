@@ -62,10 +62,10 @@
 
                 <!-- RIGHT BUTTON 4 #contact-us -->
                 <div class="contact-us-icon">
-                    <a href="../login" class="">
+                    <a href="/login" class="">
 
-                        <img src="./assets/img/header/subscribe-icon-100x100.jpg" alt="contact-info" width="100px"
-                            id="contact">
+                        <img type="button" src="./assets/img/header/subscribe-icon-100x100.jpg" alt="contact-info" width="100px"
+                            id="myLoginButton">
                     </a>
                 </div>
 
@@ -85,26 +85,17 @@
     </div>
     </header>
 
-
-
-    {{!-- THIS WILL WORK TO SETUP HEADER AND FOOTER ICONS --}}
-    {{!-- <nav>
-        {{#if loggedIn}}
-        <a href="/echeriri">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/homepage">homepage</a>
-        {{/if}}
-    </nav> --}}
-
     <main>
 
         {{{ body }}}
         {{{ contact }}}
+
         {{{ fire }}}
         {{{ earth }}}
         {{!-- {{{ team }}}
         {{{ user }}}  --}}
+        {{{ login }}}
+
 
     </main>
 
