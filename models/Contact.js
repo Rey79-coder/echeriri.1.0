@@ -1,23 +1,24 @@
-const sequelize = require('../config/connection');
-const stylesheet = require('./css/style.css')
+const router = require('express').Router();
+const express = require('express');
 
-myStorage = window.localStorage;
+const sequelize = require('../config/connection');
+// const stylesheet = require('./css/style.css')
+
+// myStorage = window.localStorage;
 
 // STICKY HEADER / When the user scrolls the page, execute myFunction
-window.onscroll = function() {Contact()};
+onclick = function() {myContactBtn()};
 
-// Get the header
-var Contact = document.getElementById("contact-us");
+router.get('/', (req, res) => {
+    if (req.session.loggedIn) {
+      res.redirect('/');
+      return;
+    }
+    // res.render('../views/contact.handlebars');
+    res.render('../views/contact.handlebars');
+  });
 
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function Contact() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-}}
+router.use(express.static(__dirname + '/public'));
 
-app.use(express.static(__dirname + '/public'));
-
-module.exports = Contact;
+module.exports = router;

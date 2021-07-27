@@ -1,25 +1,27 @@
 
 const router = require('express').Router();
 const { Contact } = require('../models');
-const { router } = require('./home-routes');
+// const { router } = require('./contact-routes');
 
 
 
-// const express = require('express')
-// const server = express()
+router.get('/', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  // res.render('../views/contact.handlebars');
+  res.render('../views/contact.handlebars');
+});
 
-/* route requests for static files to appropriate directory */
-router.use('/public', express.static(__dirname + './views/contact.handlebars'))
-
-/* other routes defined before catch-all */
 router.get('/contact', (req, res) => {
-  res.send('ok')
-})
+  if (req.session.loggedIn) {
+    res.redirect('/contact');
+    return;
+  }
+  res.render('views/main.handlebars');
+});
 
-/* final catch-all route to index.html defined last */
-router.get('/*', (req, res) => {
-  res.sendFile(__dirname + './views/layouts/main.handlebars');
-})
 
 module.exports = router;
 
@@ -36,7 +38,7 @@ module.exports = router;
 //         public.url.Index() 
         
 //         { 
-//             return ('./views/contact.handlebars'); 
+//             return ('./views/main.handlebars'); 
 //         } 
 //     } 
 //   }
@@ -44,3 +46,4 @@ module.exports = router;
 
 // app.use(express.static(__dirname + '/public'));
 
+// module.exports = router;
