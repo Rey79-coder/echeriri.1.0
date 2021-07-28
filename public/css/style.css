@@ -6,6 +6,20 @@
     margin: 0;
 }
 
+.queen {
+    display: flex;
+}
+
+
+.blank {
+    flex: auto;
+    background-color:white;
+}
+
+.king {
+    flex: 4;
+}
+
 .container {
     /* display: flex; */
     flex: 4;
@@ -61,7 +75,7 @@
 .bottom-border {
     border: solid white;
     border-style: solid;
-    margin-top: 175px;
+    margin-top: 155px;
     border-width: thin medium thick 20px;
 }
 
@@ -120,7 +134,6 @@
     margin-bottom: 120px; /* SOLUTION TO PUSH BOTTOM AND FOOTER WON'T COVER IT*/
 }
 
-/*-----Richie CSS----*/
 
 .elemcont1 {
     display: flex;
@@ -141,11 +154,12 @@
 .title, .is-1 {
     font-family: 'itc-american-typewriter', serif;
     font-style: normal;
-    font-weight: 300;  
+    size: 30px;
+    /* font-weight: 200;   */
 }
 
 /*-------------------------------------------------------------------------------------------------
-/* ABOUT section   /  CHAD SECTION START */ 
+/* ABOUT section   / 
 
 
 /* MISSION statement*/
@@ -174,10 +188,13 @@
 #soap {
     float: right;
     margin-bottom: 30px;
-
 }
 
-/* ABOUT section   /  CHAD SECTION FINISHED */ 
+#customer-info {
+    margin-left: 20px;
+}
+
+/* ABOUT section   */ 
 
 /*textbox*/
 
@@ -189,29 +206,52 @@
     background-color: rgb(248, 244, 244);
       border: 2px solid #7a7a7a;
 }
-/* API WIKIPEDIA STYLES */
 
+/* TESTING */
 
-#hor-line {
-    height:1px;
-    width: 50%; 
+.container-login {
+    width: 100%; 
     margin: auto;
     border-width:0;
-    color:rgb(161, 160, 160);
-    background-color:gray;
     display: block;
     text-align: center;
 }
 
 
-#learn-ingredients {
-    display: block;
+.container-login {
+    /* display: block; */
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 30px;
 }
 
+/* LOGIN STYLES */
 
+
+#login {
+    height:25px;
+    width: 50%; 
+    margin: auto;
+    border-width:0;
+    color:white;
+    background-color:gray;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#logout {
+    height:25px;
+    width: 50%; 
+    margin: auto;
+    border-width:0;
+    color:white;
+    background-color:gray;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
   
 
   /* DISPLAY AREA WIKI RESULT */
@@ -256,7 +296,7 @@
     width: 100%;
     text-align: center;
     padding: 12px;
-    background-color: #89A13A;
+    background-color: #7C5723;
 }
 
 .container-footer { 
@@ -283,6 +323,8 @@ font-weight: 400; */
 #header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+
 
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
