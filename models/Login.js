@@ -2,11 +2,7 @@ const router = require('express').Router();
 const express = require('express');
 
 const sequelize = require('../config/connection');
-// const stylesheet = require('./css/style.css')
 
-// myStorage = window.localStorage;
-
-// STICKY HEADER / When the user scrolls the page, execute myFunction
 onclick = function() {myLoginButton()};
 
 router.get('/', (req, res) => {

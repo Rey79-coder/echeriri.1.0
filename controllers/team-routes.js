@@ -1,7 +1,6 @@
 
 const router = require('express').Router();
 const { Team } = require('../models');
-// const { router } = require('./contact-routes');
 
 
 
@@ -10,7 +9,6 @@ router.get('/', (req, res) => {
     res.redirect('/');
     return;
   }
-  // res.render('../views/contact.handlebars');
   res.render('../views/team.handlebars');
 });
 

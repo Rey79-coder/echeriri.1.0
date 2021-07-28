@@ -1,8 +1,6 @@
 
 const router = require('express').Router();
 const { Contact } = require('../models');
-// const { router } = require('./contact-routes');
-
 
 
 router.get('/', (req, res) => {
@@ -25,25 +23,3 @@ router.get('/contact', (req, res) => {
 
 module.exports = router;
 
-
-
-      // THIS IS WORKING SOMEHOW
-// router.get('/', (req, res) => {
-
-// namespace.Contact.Controllers; 
-// { 
-//     public.class.ContactController; Controller 
-//     { 
- 
-//         public.url.Index() 
-        
-//         { 
-//             return ('./views/main.handlebars'); 
-//         } 
-//     } 
-//   }
-// })
-
-// app.use(express.static(__dirname + '/public'));
-
-// module.exports = router;

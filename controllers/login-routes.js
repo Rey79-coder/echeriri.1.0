@@ -1,7 +1,5 @@
 const router = require('express').Router();
 const { Login } = require('../models');
-// const { router } = require('./contact-routes');
-
 
 
 router.get('/', (req, res) => {
@@ -9,7 +7,6 @@ router.get('/', (req, res) => {
     res.redirect('/');
     return;
   }
-  // res.render('../views/contact.handlebars');
   res.render('../views/login.handlebars');
 });
 
