@@ -14,7 +14,11 @@
 ## Description:
     This website will sell natural bar soaps for everybody. An upcoming soap company Echeriri. The site displays its collection (EARTH, WATER, FIRE, and WIND). 
 ## Installation:
-     npm i express, requires node, handlebars, API routes.
+     * Node.js
+     * Express.js 
+     * Handlebars.js 
+     * MySQL
+     *Heroku
 ## Usage:
     People can place orders through the website.
 ## Licenses:
