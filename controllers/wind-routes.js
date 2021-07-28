@@ -7,7 +7,6 @@ router.get('/', (req, res) => {
     res.redirect('/');
     return;
   }
-  // res.render('../views/contact.handlebars');
   res.render('../views/wind.handlebars');
 });
 

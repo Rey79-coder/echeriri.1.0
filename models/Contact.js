@@ -2,7 +2,6 @@ const router = require('express').Router();
 const express = require('express');
 
 const sequelize = require('../config/connection');
-// const stylesheet = require('./css/style.css')
 
 // myStorage = window.localStorage;
 
@@ -14,7 +13,6 @@ router.get('/', (req, res) => {
       res.redirect('/');
       return;
     }
-    // res.render('../views/contact.handlebars');
     res.render('../views/contact.handlebars');
   });
 
