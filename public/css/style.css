@@ -210,25 +210,22 @@
 /* TESTING */
 
 .container-login {
-    /* height:1px; */
-    width: 50%; 
+    width: 100%; 
     margin: auto;
     border-width:0;
-    /* color:rgb(161, 160, 160);
-    background-color:gray; */
     display: block;
     text-align: center;
 }
 
 
 .container-login {
-    display: block;
+    /* display: block; */
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 30px;
 }
 
-/* API WIKIPEDIA STYLES */
+/* LOGIN STYLES */
 
 
 #login {
@@ -328,12 +325,6 @@ font-weight: 400; */
 }
 
 
-.container-login {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-
-}
 
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
