@@ -1,15 +1,34 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background-color: aqua;
-}
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css";
 
-.container-login {
-    background-color: aqua;
+
+.all-form {
+    display: flex;
+    justify-content: center;
+    margin-left: 50%;
+    background-image: "../assets/img/sign-in/echeriri-sign-in-icon.jpg";
     
-    } 
+    }
+     
+    .container-login {
+        height:1px;
+        width: 50%; 
+        margin: auto;
+        border-width:0;
+        color:rgb(161, 160, 160);
+        background-color:gray;
+        display: block;
+        text-align: center;
+    }
+    
+    
+    .container-login {
+        display: block;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding-bottom: 30px;
+    }
 
+/* .blank 
 
 /* .blank {
     flex: auto;
