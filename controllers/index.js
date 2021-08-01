@@ -23,7 +23,7 @@ router.use('/login', loginRoutes);
 
 router.use('/contact', contactRoutes);
 router.use('/team', teamRoutes);
-router.use('/homepage', homeRoutes);
+router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 
 
